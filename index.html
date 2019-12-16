@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Distributed System Visualization</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class='title'>Distributed Crawler</h1>
+    <div id="team_style">
+        <span class="team">Team: Tianyu Ge, Xin Zhang, Kerui Qiu, Ziyu Zhou</span>
+    </div>
+    <div class="container">
+        <div class="input-group flex-nowrap" id='master_address'>
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="master_info">Master Information</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="addon-wrapping" id='input_address'> 
+          <input type="text" class="form-control" placeholder="Port" aria-label="Username" aria-describedby="addon-wrapping" id='input_port'>
+          <input type="text" class="form-control" placeholder="Seed Url" aria-label="Username" aria-describedby="addon-wrapping" id='input_seed'>
+        </div>
+        <div class='submit' id='buttons'>
+            <button type="button" class="btn btn-secondary"  id='Start'>Start</button>
+            <button type="button" class="btn btn-secondary"  id='Stop'>Stop</button>
+        </div>
+        
+        <table class="table" id="tabletest">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Slaves Index</th>
+                <th scope="col">Name</th>
+                <th scope="col">Port</th>
+                <th scope="col">Address</th>
+              </tr>
+            </thead>
+        </table>          
+        <canvas id="myChart" width="740" height="200"></canvas>
+    
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.4.0/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

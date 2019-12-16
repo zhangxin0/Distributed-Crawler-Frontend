@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-color: aqua;
+}
+
+.title {
+    width: 100%;
+    margin: 5% 35%;
+}
+
+.hide-desktop {
+    display: none;
+}
+
+.team {
+    width: 100%;
+    margin: 10% 2% 35% 10%;
+    /* background-color:rgb(63, 57, 57); */
+    color:white;
+}
+#team_style {
+    background-color: rgb(34, 32, 32);
+    height: 2%;
+
+}
+#master_address {
+    width: 100%;
+    margin: 5% 0;
+    display: inline;
+}
+
+#Start {
+    display: inline;
+    margin-bottom: 2%;
+    background-color: green;
+}
+#master_info {
+    margin: 2% 0% 0 0;
+}
+
+#Stop {
+    display: inline;
+    margin-bottom: 2%;
+    background-color: red;
+}
